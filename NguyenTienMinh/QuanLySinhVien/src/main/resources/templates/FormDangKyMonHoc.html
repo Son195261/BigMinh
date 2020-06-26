@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang đăng ký môn học</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+            .topnav a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" style="background-color: chartreuse;overflow: auto;padding: 15px;">
+        <div style="text-align: center;font-weight: bold;font-size: 25px;">
+            TRƯỜNG ĐẠI HỌC KINH DOANH VÀ CÔNG NGHỆ HÀ NỘI
+        </div>
+        <div style="text-align: center;font-weight: bold;font-size: 25px;">
+            Hanoi University of Business and Technology
+        </div>
+        <div style="text-align: center;font-weight: bold;font-size: 25px;">
+            CỔNG THÔNG TIN ĐÀO TẠO ĐẠI HỌC HỆ CHÍNH QUY
+        </div>
+    </div>
+    <div class="container" style="overflow: auto;background-color: rgb(61, 61, 61);">
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Xem điểm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Sửa lý lịch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Xem Hệ đào tạo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Xem môn học</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Lớp học</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Xem lịch thi</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" style="overflow: auto;background-color: white;border: 1px solid rgb(206, 206, 206);">
+        <div style="padding: 10px;border: 1px solid rgb(201, 201, 201);">
+            <div class="topnav">
+                <a class="active" href="#home">Trang chủ</a>
+                <div class="search-container">
+                    <form action="#">
+                        <input style="width: 400px;" type="text" placeholder="Tên môn học..." name="tenmonhoc">
+                        <button type="submit">Tìm kiếm môn học</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <table class="table table-bordered">
+                <thead style="background-color: rgb(163, 163, 218);">
+                    <tr>
+                        <th>Mã môn</th>
+                        <th>Tên môn</th>
+                        <th>STC</th>
+                        <th>Học kỳ</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <div style="font-weight: bold;">
+                    Học kỳ 1 năm học 2016-2017
+                </div>
+                <tbody>
+                    <th:block th:each="mh:${monhoc}">
+	                    <tr>
+	                        <td th:utext="${mh.mamonhoc}"></td>
+	                        <td th:utext="${mh.tenmonhoc}"></td>
+	                        <td th:utext="${mh.sotinchi}"></td>
+	                        <td th:utext="${mh.hocky}"></td>
+	                        <td><a th:href="@{/formchinh/formdangkymonhoc/xulythemmonhoc/{mamonhoc}(mamonhoc=${mh.mamonhoc})}" class="btn btn-primary">Thêm môn học</a></td>
+	                    </tr>
+                    </th:block>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <table class="table table-bordered">
+                <thead style="background-color: rgb(163, 163, 218);">
+                    <tr>
+                        <th>Mã môn</th>
+                        <th>Tên môn</th>
+                        <th>STC</th>
+                        <th>Học kỳ</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <div style="font-weight: bold;">
+                    DANH SÁCH CÁC MÔN ĐÃ CHỌN
+                </div>
+                <tbody>
+                    <th:block th:each="mdc:${mondachon}">
+	                    <tr>
+	                        <td th:utext="${mdc.mamonhoc}"></td>
+	                        <td th:utext="${mdc.tenmonhoc}"></td>
+	                        <td th:utext="${mdc.sotinchi}"></td>
+	                        <td th:utext="${mdc.hocky}"></td>
+	                        <td><a th:href="@{/formchinh/formdangkymonhoc/xoamondachon/{mamonhoc}(mamonhoc=${mdc.mamonhoc})}" class="btn btn-primary">Xóa môn học</a></td>
+	                    </tr>
+                    </th:block>
+                </tbody>
+            </table>
+            <a class="btn btn-primary" th:href="@{/formchinh/formdangkymonhoc/luumonhocdachon}" style="margin-top: 20px;">Lưu</a>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
